@@ -127,11 +127,11 @@
                     <div class="card issue-card mb-3">
                         <div class="card-body">
                             <h5 class="card-title">${issue.title}</h5>
-                            <p class="text-muted">Автор: ${issue.user.login}</p>
+                            <p class="text-muted">Author: ${issue.user.login}</p>
                             <a href="${issue.html_url}" 
                                target="_blank" 
                                class="btn btn-outline-primary">
-                                Перейти к обсуждению (${issue.comments} комментариев)
+                                Go to discussion (${issue.comments} comments)
                             </a>
                         </div>
                     </div>
@@ -147,11 +147,11 @@
                     <div class="card issue-card mb-3">
                         <div class="card-body">
                             <h5 class="card-title">${discussion.title}</h5>
-                            <p class="text-muted">Автор: ${discussion.author.login}</p>
+                            <p class="text-muted">Author: ${discussion.author.login}</p>
                             <a href="${discussion.url}" 
                                target="_blank" 
                                class="btn btn-outline-primary">
-                                Ответов: ${discussion.comments.totalCount}
+                                Replies: ${discussion.comments.totalCount}
                             </a>
                         </div>
                     </div>
