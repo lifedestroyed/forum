@@ -23,7 +23,7 @@
 
         <!-- Контент Issues -->
         <div id="issues-tab">
-            <a href="https://github.com/<ВАШ_USERNAME>/<ВАШ_REPO>/issues/new" 
+            <a href="https://github.com/lifedestroyed/forum/issues/new" 
                class="btn btn-success mb-3" 
                target="_blank">
                 Создать новую тему
@@ -33,7 +33,7 @@
 
         <!-- Контент Discussions -->
         <div id="discussions-tab" style="display: none;">
-            <a href="https://github.com/<ВАШ_USERNAME>/<ВАШ_REPO>/discussions/new" 
+            <a href="https://github.com/lifedestroyed/forum/discussions/new" 
                class="btn btn-success mb-3" 
                target="_blank">
                 Задать вопрос
@@ -52,8 +52,8 @@
     <script>
         // Конфигурация
         const CONFIG = {
-            repoOwner: '<ВАШ_USERNAME>',
-            repoName: '<ВАШ_REPO>',
+            repoOwner: 'lifedestroyed',
+            repoName: 'forum',
             issuesApi: 'https://api.github.com/repos/{owner}/{repo}/issues',
             discussionsApi: 'https://api.github.com/graphql'
         };
@@ -106,7 +106,7 @@
                 const response = await fetch(CONFIG.discussionsApi, {
                     method: 'POST',
                     headers: {
-                        'Authorization': 'Bearer <ВАШ_TOKEN>',
+                        'Authorization': 'Bearer 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',
                         'Content-Type': 'application/json'
                     },
                     body: JSON.stringify({ query })
